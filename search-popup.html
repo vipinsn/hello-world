@@ -1,0 +1,120 @@
+<!doctype html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />	
+</head>
+<body>
+
+	<div class="wp_search"><a href="#" onclick="openNav2()"><span>search</span></a></div>
+
+
+	<div id="rightside" class="sidenav2">
+    <div class="sidemenu">
+      <div class="hdwel light">
+        SEARCH
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">×</a>
+      </div>
+
+         
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+  	
+	// Search Slid Bar
+	function openNav2() {
+	    document.getElementById("rightside").style.width = "450px";
+	    document.body.style.backgroundColor = "rgba(255,255,255, 0.1)";
+	}
+	function closeNav2() {
+	    document.getElementById("rightside").style.width = "0";
+	    document.body.style.backgroundColor = "white";
+	}
+
+  </script>
+
+
+<style type="text/css">
+	/*******************************
+	SHOP SIDEBAR
+*******************************/
+
+/*-----------*/
+
+
+.sidenav2 {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	right: 0;
+	background-color: #f6f6f6;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 40px;
+	-webkit-box-shadow: 5px 0px 15px 5px rgba(131,201,194,0.2);
+	-moz-box-shadow: 5px 0px 15px 5px rgba(131,201,194,0.2);
+	box-shadow: 5px 0px 15px 5px rgba(131,201,194,0.2);
+}
+.sidenav2 a {
+	padding: 1px 8px 0px 0px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #333;
+	display: block;
+	transition: 0.3s
+}
+.sidenav2 a:hover, .offcanvas a:focus {
+	color: #000;
+}
+.sidenav2 .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+.sidenav a:hover, .offcanvas a:focus {
+	color: #000;
+}
+.sidenav .closebtn {
+	position: absolute;
+	top: -7px;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+.sidemenu {
+	padding: 10px 17%;
+	display: block;
+	position: relative;
+	overflow-x: auto;
+}
+.sidemenu .hdwel {
+	font-size: 24px;
+	margin-bottom: 30px;
+	font-weight: 200;
+}
+
+
+@-webkit-keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+
+/* Circle */
+</style>
+
+
+</body>
+</html>
